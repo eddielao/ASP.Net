@@ -32,7 +32,8 @@
 
         <div class="row">
             <asp:Label runat="server" class="col-md-2" ForeColor="Red">Result:</asp:Label>
-            <asp:Textbox runat="server" class="col-md-10" ForeColor="Red" ReadOnly="true" Text="Value"></asp:Textbox>
+            <asp:Textbox runat="server" class="col-md-8" ForeColor="Red" ReadOnly="true" Text="Value"></asp:Textbox>
+            <asp:Button runat="server" Text="Clear" />
         </div>
     </div>
     </form>
