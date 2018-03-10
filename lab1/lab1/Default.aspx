@@ -7,22 +7,33 @@
     <title>Calculator</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/site.css" rel="stylesheet" />
-    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:Label runat="server">Operand 1:</asp:Label>
-        <asp:TextBox runat="server" Text="Enter here"></asp:TextBox><br />
-        <asp:Button runat="server" Text="+" />
-        <asp:Button runat="server" Text="-" />
-        <asp:Button runat="server" Text="x" />
-        <asp:Button runat="server" Text="/" /><br />
-        <asp:Label runat="server">Operand 2:</asp:Label>
-        <asp:TextBox runat="server" Text="Enter here"></asp:TextBox><br />
-        <asp:Label runat="server">Result:</asp:Label>
-        <asp:Label runat="server"></asp:Label>
+    <div class="container">
+        <div class="row">
+            <asp:Label runat="server" class="col-md-2">Operand 1:</asp:Label>
+            <asp:TextBox runat="server" class="col-md-10" placeholder="Enter here"></asp:TextBox>
+        </div>
+
+        <div class="row">
+            <asp:Button runat="server" Text="+" />    
+            <asp:Button runat="server" Text="-" />    
+            <asp:Button runat="server" Text="x" />    
+            <asp:Button runat="server" Text="/" />    
+        </div>
+
+        <div class="row">
+            <asp:Label runat="server" class="col-md-2">Operand 2:</asp:Label>
+            <asp:TextBox runat="server" class="col-md-10" placeholder="Enter here"></asp:TextBox><br />
+        </div>
+
+        <div class="row">
+            <asp:Label runat="server" class="col-md-2">Result:</asp:Label>
+            <asp:Textbox runat="server" class="col-md-10" placeholder="Value"></asp:Textbox>
+        </div>
     </div>
     </form>
 </body>
