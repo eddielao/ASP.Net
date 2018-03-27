@@ -37,6 +37,7 @@
         </div>
 
         <div class="row">
+            <label class="col-md-2">Operation Counter: </label>
             <asp:Label runat="server" class="col-md-2" ID="lblCount"></asp:Label>
         </div>
     </div>

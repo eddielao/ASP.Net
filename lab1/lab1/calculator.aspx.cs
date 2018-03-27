@@ -12,7 +12,12 @@ namespace lab1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Session["OpCount"] == null)
+            {
+                Session["OpCount"] = 0;
+            }
+
+            lblCount.Text = Session["OpCount"].ToString();
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)
