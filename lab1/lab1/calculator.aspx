@@ -19,10 +19,14 @@
         </div>
 
         <div class="text-center">
-            <asp:ImageButton runat="server" BorderWidth="0" class="btn" ImageURL=".\Images\adds.png" OnClick="btnAdd_Click" TabIndex ="4" />
-            <asp:ImageButton runat="server" BorderWidth="0" class="btn" ImageURL=".\Images\subtract.png" OnClick="btnMinus_Click" TabIndex ="5" />
-            <asp:ImageButton runat="server" BorderWidth="0" class="btn" ImageURL=".\Images\multiply.png" OnClick="btnMulti_Click" TabIndex ="6" />
-            <asp:ImageButton runat="server" BorderWidth="0" class="btn" ImageURL=".\Images\divide.png" OnClick="btnDiv_Click" TabIndex ="7" />
+            <asp:ImageButton runat="server" BorderWidth="0" class="btn" CommandName="Add" ImageURL=".\Images\adds.png" 
+                OnClick="Calculate_Command" TabIndex ="4" />
+            <asp:ImageButton runat="server" BorderWidth="0" class="btn" CommandName="Subtract" ImageURL=".\Images\subtract.png" 
+                OnClick="Calculate_Command" TabIndex ="5" />
+            <asp:ImageButton runat="server" BorderWidth="0" class="btn" CommandName="Multiply" ImageURL=".\Images\multiply.png" 
+                OnClick="Calculate_Command" TabIndex ="6" />
+            <asp:ImageButton runat="server" BorderWidth="0" class="btn" CommandName="Divide" ImageURL=".\Images\divide.png" 
+                OnClick="Calculate_Command" TabIndex ="7" />
         </div>
 
         <div class="row">
