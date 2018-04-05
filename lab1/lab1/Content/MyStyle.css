@@ -9,3 +9,8 @@
 div {
     align-content: center;
 }
+
+div .btn {
+    padding: 0;
+    margin: 5px;
+}

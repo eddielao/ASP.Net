@@ -31,42 +31,6 @@ namespace lab1 {
         protected global::System.Web.UI.WebControls.TextBox txtOp1;
         
         /// <summary>
-        /// btnAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
-        
-        /// <summary>
-        /// btnMinus control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMinus;
-        
-        /// <summary>
-        /// btnMulti control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMulti;
-        
-        /// <summary>
-        /// btnDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDiv;
-        
-        /// <summary>
         /// txtOp2 control.
         /// </summary>
         /// <remarks>

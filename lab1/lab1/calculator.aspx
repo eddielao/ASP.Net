@@ -15,25 +15,25 @@
     <div class="container">
         <div class="row">
             <asp:Label runat="server" class="col-md-2" ForeColor="Red" TabIndex="-1">Operand 1:</asp:Label>
-            <asp:TextBox runat="server" class="col-md-10" placeholder="Enter here" ID="txtOp1" TabIndex="1"></asp:TextBox>
+            <asp:TextBox runat="server" class="col-md-10" placeholder="Enter here" ID="txtOp1" TabIndex="2"></asp:TextBox>
         </div>
 
-        <div>
-            <asp:Button runat="server" class="btn" Text="+" ID="btnAdd" OnClick="btnAdd_Click" TabIndex="3" />    
-            <asp:Button runat="server" class="btn" Text="-" ID="btnMinus" OnClick="btnMinus_Click" TabIndex="4" />    
-            <asp:Button runat="server" class="btn" Text="x" ID="btnMulti" OnClick="btnMulti_Click" TabIndex="5" />    
-            <asp:Button runat="server" class="btn" Text="/" ID="btnDiv" OnClick="btnDiv_Click" TabIndex="6" />    
+        <div class="text-center">
+            <asp:ImageButton runat="server" BorderWidth="0" class="btn" ImageURL=".\Images\adds.png" OnClick="btnAdd_Click" TabIndex ="4" />
+            <asp:ImageButton runat="server" BorderWidth="0" class="btn" ImageURL=".\Images\subtract.png" OnClick="btnMinus_Click" TabIndex ="5" />
+            <asp:ImageButton runat="server" BorderWidth="0" class="btn" ImageURL=".\Images\multiply.png" OnClick="btnMulti_Click" TabIndex ="6" />
+            <asp:ImageButton runat="server" BorderWidth="0" class="btn" ImageURL=".\Images\divide.png" OnClick="btnDiv_Click" TabIndex ="7" />
         </div>
 
         <div class="row">
             <asp:Label runat="server" class="col-md-2" ForeColor="Red" TabIndex="-1">Operand 2:</asp:Label>
-            <asp:TextBox runat="server" class="col-md-10" placeholder="Enter here" ID="txtOp2" TabIndex="2"></asp:TextBox><br />
+            <asp:TextBox runat="server" class="col-md-10" placeholder="Enter here" ID="txtOp2" TabIndex="3"></asp:TextBox><br />
         </div>
 
         <div class="row">
             <asp:Label runat="server" class="col-md-2" ForeColor="Red" TabIndex="-1">Result:</asp:Label>
             <asp:Textbox runat="server" class="col-md-8" ForeColor="Red" ReadOnly="true" Text="Value" ID="txtAns" TabIndex="-1"></asp:Textbox>
-            <asp:Button runat="server" Text="Clear" ID="btnClear" OnClick="btnClear_Click" TabIndex="7" />
+            <asp:Button runat="server" Text="Clear" ID="btnClear" OnClick="btnClear_Click" TabIndex="1" />
         </div>
 
         <div class="row">
