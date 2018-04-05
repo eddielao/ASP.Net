@@ -69,6 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\MyStyle.css" />
+    <Content Include="Images\adds.png" />
+    <Content Include="Images\divide.png" />
+    <Content Include="Images\multiply.png" />
+    <Content Include="Images\subtract.png" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
