@@ -7,7 +7,7 @@
     <title>Calculator</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/MyStyle.css" rel="stylesheet" />
-    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
 </head>
 <body>
@@ -16,6 +16,16 @@
         <div class="row">
             <asp:Label runat="server" class="col-md-2" ForeColor="Red" TabIndex="-1">Operand 1:</asp:Label>
             <asp:TextBox runat="server" class="col-md-10" placeholder="Enter here" ID="txtOp1" TabIndex="2"></asp:TextBox>
+        </div>
+        <div class="row">
+            <span class="col-md-2"></span>
+            <asp:RequiredFieldValidator runat="server" class="col-md-10 text-danger" ControlToValidate="txtOp1" ID="rfvOP1" 
+                Display="Static" Enabled="true" Text="A numeric value is required."></asp:RequiredFieldValidator>           
+        </div>
+        <div class="row">
+            <span class="col-md-2"></span>
+             <asp:RangeValidator runat="server" class="col-md-10 text-danger" ControlToValidate="txtOp1" ID="rvOp1" 
+                Display="Dynamic" Enabled="true" Text="Must be a numeric value." Type="Double"></asp:RangeValidator>
         </div>
 
         <div class="text-center">
@@ -32,6 +42,9 @@
         <div class="row">
             <asp:Label runat="server" class="col-md-2" ForeColor="Red" TabIndex="-1">Operand 2:</asp:Label>
             <asp:TextBox runat="server" class="col-md-10" placeholder="Enter here" ID="txtOp2" TabIndex="3"></asp:TextBox><br />
+        </div>
+        <div>
+
         </div>
 
         <div class="row">

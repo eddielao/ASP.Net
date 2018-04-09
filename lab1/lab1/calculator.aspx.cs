@@ -11,6 +11,12 @@ namespace lab1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                rvOp1.MaximumValue = Double.MaxValue.ToString("r");
+                //rvOp1.MinimumValue = Double.MinValue.ToString();
+            }
+
             if (Session["OpCount"] == null)
             {
                 Session["OpCount"] = 0;
