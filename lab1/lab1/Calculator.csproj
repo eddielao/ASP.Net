@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>2.7</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -73,10 +74,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\MyStyle.css" />
-    <Content Include="Images\adds.png" />
-    <Content Include="Images\divide.png" />
-    <Content Include="Images\multiply.png" />
-    <Content Include="Images\subtract.png" />
+    <Content Include="Images\add-w.png" />
+    <Content Include="Images\divide-w.png" />
+    <Content Include="Images\multiply-w.png" />
+    <Content Include="Images\subtract-w.png" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
