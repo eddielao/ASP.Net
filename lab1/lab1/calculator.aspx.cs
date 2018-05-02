@@ -17,6 +17,26 @@ namespace lab1
             }
 
             lblCount.Text = Session["OpCount"].ToString();
+
+            if (Application["HitCount"] == null)
+            {
+                Application["HitCount"] = 1;
+            }
+            else
+            {
+                Application["HitCount"] = (int)Application["HitCount"] + 1;
+            }
+
+            lblHit.Text = Application["HitCount"].ToString();
+
+            if (!IsPostBack && Request.Cookies["UserName"] != null)
+            {
+                txtName.Text = "Welcome back " + Request.Cookies["UserName"].Value;
+            }
+            else
+            {
+                AddCookie();
+            }
         }
 
         protected void Calculate_Command(object sender, EventArgs e)
@@ -66,6 +86,14 @@ namespace lab1
             }
 
             lblCount.Text = Session["OpCount"].ToString();
+        }
+
+        private void AddCookie()
+        {
+            if (txtName.Text == "") txtName.Text = "Stranger";
+            HttpCookie userCookie = new HttpCookie("UserName", txtName.Text);
+            userCookie.Expires = DateTime.Now.AddMonths(1);
+            Response.Cookies.Add(userCookie);
         }
     }
 }

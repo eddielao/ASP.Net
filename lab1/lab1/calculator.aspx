@@ -14,6 +14,11 @@
     <form id="form1" runat="server" defaultbutton="btnClear">
     <div class="container">
         <div class="row">
+            <label class="col-md-2" tabindex="-1">Name:</label>
+            <asp:TextBox runat="server" class="col-md-3 rounded" ID="txtName" placeholder="Enter your name" TabIndex="8"></asp:TextBox>
+        </div>
+
+        <div class="row">
             <asp:Label runat="server" class="col-md-2" ForeColor="Red" TabIndex="-1">Operand 1:</asp:Label>
             <asp:TextBox runat="server" class="col-md-6 rounded" placeholder="Enter here" ID="txtOp1" TabIndex="2"></asp:TextBox>
             <asp:RequiredFieldValidator runat="server" class="col-md-4 text-danger" ControlToValidate="txtOp1" ID="rfvOP1" 
@@ -55,6 +60,11 @@
         <div class="row">
             <asp:Label runat="server" class="col-md-2" TabIndex="-1">Operation Counter: </asp:Label>
             <asp:Label runat="server" class="col-md-2" ID="lblCount" TabIndex="-1"></asp:Label>
+        </div>
+
+        <div class="row">
+            <asp:Label runat="server" class="col-md-2" TabIndex="-1">Hit Counter: </asp:Label>
+            <asp:Label runat="server" class="col-md-2" ID="lblHit" TabIndex="-1"></asp:Label>
         </div>
 
         <div class="row">
