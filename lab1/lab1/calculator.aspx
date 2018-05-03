@@ -1,17 +1,14 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="calculator.aspx.cs" Inherits="lab1.Calculator" EnableSessionState="True" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="calculator.aspx.cs" Inherits="lab1.Calculator" EnableSessionState="True" 
+    MasterPageFile="~/MyMaster.Master" Title="Calculator" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Calculator</title>
+<asp:Content ID="CalculatorHead" ContentPlaceHolderID="head" runat="server">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/MyStyle.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.3.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
-</head>
-<body>
-    <form id="form1" runat="server" defaultbutton="btnClear">
+</asp:Content>
+
+<asp:Content ID="CalculatorMain" ContentPlaceHolderID="main" runat="server">
     <div class="container">
         <div class="row">
             <label class="col-md-2" tabindex="-1">Name:</label>
@@ -73,6 +70,4 @@
                 HeaderText="See below for error detail:" />
         </div>
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>
