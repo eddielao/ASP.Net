@@ -73,6 +73,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Calculator.mdf" />
+    <Content Include="App_Data\Calculator_log.ldf">
+      <DependentUpon>Calculator.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\MyStyle.css" />
     <Content Include="Images\add-w.png" />
     <Content Include="Images\divide-w.png" />
@@ -173,7 +177,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
